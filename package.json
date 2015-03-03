@@ -1,0 +1,33 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run serve | npm run dev",
+    "serve": "./node_modules/.bin/http-server -p 9080",
+    "dev": "webpack-dev-server --progress --colors --port 9090"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/CallumVass/dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CallumVass/dashboard/issues"
+  },
+  "homepage": "https://github.com/CallumVass/dashboard",
+  "dependencies": {
+    "lodash": "^3.3.1",
+    "react": "^0.12.2",
+    "react-router": "^0.12.4",
+    "reflux": "^0.2.5"
+  },
+  "devDependencies": {
+    "http-server": "^0.7.5",
+    "jsx-loader": "^0.12.2",
+    "webpack": "^1.6.0",
+    "webpack-dev-server": "^1.7.0"
+  }
+}
