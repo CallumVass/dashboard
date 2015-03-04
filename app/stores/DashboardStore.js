@@ -8,14 +8,13 @@ var Reflux = require("reflux"),
 module.exports = Reflux.createStore({
     init: function () {
         this.listenToMany(Actions);
-        initializing = !initializing;
         this.update();
     },
     onChangeTime: function () {
-        initializing = !initializing;
         this.update();
     },
     update: function () {
+        initializing = !initializing;
         this.trigger(initializing);
     },
     getStatus:function()
