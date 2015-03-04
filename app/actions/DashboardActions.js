@@ -4,6 +4,5 @@ var Reflux = require("reflux")
     ;
 
 module.exports = Reflux.createActions([
-    "changeTime",
-    "filterLanes"
+    "changeTime"
 ]);
